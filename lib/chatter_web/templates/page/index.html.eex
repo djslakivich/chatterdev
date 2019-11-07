@@ -1,4 +1,4 @@
-<div id='message-list' class='row'>
+<div id='message-list' class='row' style="position: relative;">
 </div>
 
 <div class='row form-group'>
