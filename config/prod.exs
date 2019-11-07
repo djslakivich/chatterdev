@@ -15,7 +15,7 @@ use Mix.Config
 # which you typically run after static files are built.
 use Mix.Config
 
-config :chatter_app, ChatterAppWeb.Endpoint,
+config :chatter, ChatterWeb.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [scheme: "https", host: "chatphx.herokuapp.com/", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
