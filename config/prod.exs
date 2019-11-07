@@ -15,9 +15,9 @@ use Mix.Config
 # which you typically run after static files are built.
 use Mix.Config
 
-config :test_app, TestAppWeb.Endpoint,
+config :chatter_app, ChatterAppWeb.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "guarded-beach-28060.herokuapp.com/", port: 443],
+  url: [scheme: "https", host: "chatphx.herokuapp.com/", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
