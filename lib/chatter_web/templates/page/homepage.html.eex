@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chat Rooms R Us</title>
+    <style>
+      .max-width-page {
+        max-width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="max-width-page">
+
+      <h1>Welcome to my chatt app!</h1>
+      <h2>It's going to be fun!</h2>
+    </div>
+  </body>
+</html>
