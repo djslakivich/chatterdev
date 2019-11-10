@@ -1,8 +1,12 @@
 defmodule ChatterWeb.PageController do
   use ChatterWeb, :controller
 
-  def chat(conn, _) do
-    render conn, "index.html"
+  def chatone(conn, _) do
+    render conn, "chatroomone.html"
+  end
+
+  def chattwo(conn, _) do
+    render conn, "chatroomtwo.html"
   end
 
   def index(conn, _) do
@@ -16,4 +20,5 @@ defmodule ChatterWeb.PageController do
   def about(conn, _) do
     render conn, "about.html"
   end
+
 end

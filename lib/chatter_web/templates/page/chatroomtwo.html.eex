@@ -1,0 +1,1 @@
+<%= render ChatterWeb.LayoutView, "index.html", assigns %>

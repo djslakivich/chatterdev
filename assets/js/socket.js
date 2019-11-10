@@ -55,6 +55,7 @@ socket.connect()
 
 // Now that you are connected, you can join channels with a topic:
 let channel = socket.channel('chat_room:lobby', {});
+let channel_two = socket.channel('chat_room:room_two', {});
 let list = $('#message-list');
 let message = $('#message');
 let name = $('#name');

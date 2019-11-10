@@ -16,7 +16,8 @@ defmodule ChatterWeb.Router do
   scope "/", ChatterWeb do
     pipe_through :browser # Use the default browser stack
 
-    get "/chat", PageController, :chat
+    get "/chatone", PageController, :chatone
+    get "/chattwo", PageController, :chattwo
     get "/", PageController, :index
     get "/about", PageController, :about
     get "/contact", PageController, :contact

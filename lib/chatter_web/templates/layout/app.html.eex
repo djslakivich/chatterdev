@@ -20,7 +20,8 @@
             <li><a href="<%= ChatterWeb.Router.Helpers.page_path(@conn, :index) %>">Homepage</a></li>
             <li><a href="<%= ChatterWeb.Router.Helpers.page_path(@conn, :about) %>">About</a></li>
             <li><a href="<%= ChatterWeb.Router.Helpers.page_path(@conn, :contact) %>">Contact Us</a></li>
-            <li><a href="<%= ChatterWeb.Router.Helpers.page_path(@conn, :chat) %>">Chatroom</a></li>
+            <li><a href="<%= ChatterWeb.Router.Helpers.page_path(@conn, :chatone) %>">ChatroomOne</a></li>
+            <li><a href="<%= ChatterWeb.Router.Helpers.page_path(@conn, :chattwo) %>">ChatroomTwo</a></li>
           </ul>
         </nav>
       </header>

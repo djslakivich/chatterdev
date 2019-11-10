@@ -1,7 +1,7 @@
-defmodule ChatterWeb.ChatRoomChannel do
+defmodule ChatterWeb.ChatRoomChannelTwo do
   use ChatterWeb, :channel
 
-  def join("chat_room:lobby", payload, socket) do
+  def join("chat_room:room_two", payload, socket) do
     if authorized?(payload) do
       send(self(), :after_join)
       {:ok, socket}

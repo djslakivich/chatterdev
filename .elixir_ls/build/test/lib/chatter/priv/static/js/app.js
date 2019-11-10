@@ -1742,6 +1742,7 @@ socket.connect();
 
 // Now that you are connected, you can join channels with a topic:
 var channel = socket.channel('chat_room:lobby', {});
+var channel_two = socket.channel('chat_room:room_two', {});
 var list = $('#message-list');
 var message = $('#message');
 var name = $('#name');
