@@ -35,11 +35,11 @@ defmodule ChatterWeb.ChatRoomChannel do
     {:noreply, socket}
   end
 
-  def handle_info(:after_join, socket) do
-    Chatter.MessageTwo.recent_messages()
-    |> Enum.each(fn msg -> push(socket, "new_message", format_msg(msg)) end)
-    {:noreply, socket}
-  end
+#  def handle_info(:after_join, socket) do
+#    Chatter.MessageTwo.recent_messages()
+#    |> Enum.each(fn msg -> push(socket, "new_message", format_msg(msg)) end)
+#    {:noreply, socket}
+#  end
 
   def handle_in("ping", payload, socket) do
     {:reply, {:ok, payload}, socket}

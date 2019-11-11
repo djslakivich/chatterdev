@@ -7,6 +7,6 @@ defmodule Chatter.Repo do
 end
 
 
-defmodule Chatter.RepoTwo do
-  use Ecto.Repo, otp_app: :chatter
-end
+# defmodule Chatter.RepoTwo do
+#  use Ecto.Repo, otp_app: :chatter
+# end

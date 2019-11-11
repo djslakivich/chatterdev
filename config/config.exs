@@ -3,7 +3,8 @@ use Mix.Config
 
 # General application configuration
 config :chatter,
-  ecto_repos: [Chatter.Repo, Chatter.RepoTwo]
+# Add Chatter.RepoTwo for the 2nd repo when you're ready
+  ecto_repos: [Chatter.Repo]
 
 # Configures the endpoint
 config :chatter, ChatterWeb.Endpoint,
