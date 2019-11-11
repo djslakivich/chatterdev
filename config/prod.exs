@@ -30,7 +30,7 @@ config :logger, level: :info
 config :chatter, Chatter.Repo,
   adapter: Ecto.Adapters.Postgres,
   hostname: System.get_env("NEW_DATABASE_URL"),
-  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "18"),
+  pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true,
   database: System.get_env("DATABASE"),
   username: System.get_env("USERNAME"),
