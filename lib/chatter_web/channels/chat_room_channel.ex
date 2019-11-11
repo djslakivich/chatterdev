@@ -1,7 +1,18 @@
 defmodule ChatterWeb.ChatRoomChannel do
   use ChatterWeb, :channel
 
+    #room_lobby's channel code
   def join("chat_room:lobby", payload, socket) do
+    if authorized?(payload) do
+      send(self(), :after_join)
+      {:ok, socket}
+    else
+      {:error, %{reason: "unauthorized"}}
+    end
+  end
+
+    #room_two's channel code
+  def join("chat_room:room_two", payload, socket) do
     if authorized?(payload) do
       send(self(), :after_join)
       {:ok, socket}

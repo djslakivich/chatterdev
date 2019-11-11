@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Chat Rooms R Us</title>
-    <style>
-      .max-width-page {
-        max-width: 100vw;
+    <style media="screen">
+      .float-page-left {
+        float: left;
       }
     </style>
   </head>
   <body>
-    <div class="max-width-page">
-
+    <div class="float-page-left">
       <h1>Welcome to my chatt app!</h1>
-      <h2>It's going to be fun!</h2>
+      <h2>It's still a work in progress.</h2>
+      <h3>But we'll get there eventually!</h3>  
     </div>
   </body>
 </html>

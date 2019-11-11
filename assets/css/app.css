@@ -9,10 +9,12 @@
   }
 
  .nav-decoration {
-   display: flex;
+   display: block;
+   float: left;
    list-style: none;
    text-decoration: none;
-   border: 2px solid white;
+   border: 2px dashed white;
+   padding: 0px 15px;
    border-radius: 10px;
    line-height: 15px;
    margin-right: 18px;
