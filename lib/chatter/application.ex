@@ -9,9 +9,7 @@ defmodule Chatter.Application do
     # Define workers and child supervisors to be supervised
     children = [
       supervisor(Chatter.Repo, []),
-#      supervisor(Chatter.RepoTwo, []),
       supervisor(ChatterWeb.Endpoint, []),
-
     ]
 
     opts = [strategy: :one_for_one, name: Chatter.Supervisor]

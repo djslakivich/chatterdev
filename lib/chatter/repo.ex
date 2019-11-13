@@ -5,8 +5,3 @@ defmodule Chatter.Repo do
     {:ok, Keyword.put(opts, :url, System.get_env("DATABASE_URL"))}
   end
 end
-
-
-# defmodule Chatter.RepoTwo do
-#  use Ecto.Repo, otp_app: :chatter
-# end

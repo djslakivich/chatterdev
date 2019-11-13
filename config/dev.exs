@@ -56,11 +56,3 @@ config :chatter, Chatter.Repo,
   database: "chatter_dev",
   hostname: "localhost",
   pool_size: 10
-
-#config :chatter, Chatter.RepoTwo,
-#  adapter: Ecto.Adapters.Postgres,
-#  username: "postgres",
-#  password: "postgres",
-#  database: "chatter_dev",
-#  hostname: "localhost",
-#  pool_size: 10

@@ -1,9 +1,12 @@
-
+# This file is responsible for configuring your application
+# and its dependencies with the aid of the Mix.Config module.
+#
+# This configuration file is loaded before any dependency and
+# is restricted to this project.
 use Mix.Config
 
 # General application configuration
 config :chatter,
-# Add Chatter.RepoTwo for the 2nd repo when you're ready
   ecto_repos: [Chatter.Repo]
 
 # Configures the endpoint

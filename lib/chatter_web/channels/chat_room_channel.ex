@@ -35,11 +35,11 @@ defmodule ChatterWeb.ChatRoomChannel do
     {:noreply, socket}
   end
 
-#  def handle_info(:after_join, socket) do
-#    Chatter.MessageTwo.recent_messages()
-#    |> Enum.each(fn msg -> push(socket, "new_message", format_msg(msg)) end)
-#    {:noreply, socket}
-#  end
+  def handle_info(:after_join, socket) do
+    Chatter.MessageTwo.recent_messages_two()
+    |> Enum.each(fn msg -> push(socket, "new_message", format_msg(msg)) end)
+    {:noreply, socket}
+  end
 
   def handle_in("ping", payload, socket) do
     {:reply, {:ok, payload}, socket}
@@ -52,10 +52,9 @@ defmodule ChatterWeb.ChatRoomChannel do
   end
 
   def save_message(message) do
-    Chatter.Message.changeset(%Chatter.Message{}, message)
+    Chatter.Message.changeset(%Chatter.Message{}, %Chatter.MessageTwo{}, message)
       |> Chatter.Repo.insert
   end
-
 
   # Add authorization logic here as required.
   defp authorized?(_payload) do
