@@ -72,13 +72,17 @@ channel.on('new_message', payload => {
   list.prop({scrollTop: list.prop('scrollHeight')});
 });
 
-channel.join("chat_room:lobby")
-.receive('ok', resp => {console.log('Joined successfully', resp);
-  })
-  if(window.location.pathname === "chatroomtwo.html")
-  channel.join("chat_room:room_two")
-  .receive('error', resp => {
-    console.log('Unable to join', resp);
-  });
+if(window.location.pathname === "/chattwo") {
+  channel_two.join()
+    .receive('error', resp => {
+      console.log('Unable to join', resp);
+    });
+  }
+else {
+  channel.join()
+  .receive('ok', resp => {
+    console.log('Joined lobby successfully', resp);
+    })
+}
 
 export default socket;
