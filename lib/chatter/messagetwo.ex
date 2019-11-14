@@ -1,9 +1,9 @@
-defmodule Chatter.Message do
+defmodule Chatter.MessageTwo do
   use Ecto.Schema
   import Ecto.Changeset
 
 
-  schema "messages" do
+  schema "messagestwo" do
     field :message, :string
     field :name, :string
 
@@ -11,7 +11,7 @@ defmodule Chatter.Message do
   end
 
   def recent_messages(limit \\ 10) do
-    Chatter.Repo.all(Chatter.Message, limit: limit)
+    Chatter.Repo.all(Chatter.MessageTwo, limit: limit)
   end
 
   @doc false

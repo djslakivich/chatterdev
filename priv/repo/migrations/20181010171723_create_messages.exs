@@ -8,6 +8,14 @@ defmodule Chatter.Repo.Migrations.CreateMessages do
 
       timestamps()
     end
+  end
+
+  def change do
+    create table(:messagestwo) do
+      add :name, :string
+      add :message, :string
+
+      timestamps()
+    end
 
   end
-end

@@ -3,7 +3,7 @@ defmodule ChatterWeb.UserSocket do
 
   ## Channels
   channel "chat_room:lobby", ChatterWeb.ChatRoomChannel
-  channel "chat_room:chattwo", ChatterWeb.ChatRoomChannelTwo
+  channel "chat_room:room_two", ChatterWeb.ChatRoomChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket, timeout: 45_000, check_origin: false
