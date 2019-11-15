@@ -3,7 +3,7 @@ defmodule Chatter.MessageTwo do
   import Ecto.Changeset
 
 
-  schema "messagestwo" do
+  schema "messages" do
     field :message, :string
     field :name, :string
 

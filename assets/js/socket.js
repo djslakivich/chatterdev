@@ -73,13 +73,13 @@ channel.on('new_message', payload => {
 });
 
 if(window.location.pathname === "/chattwo") {
-  channel_two.join()
+  channel_two.join('chat_room:room_two')
     .receive('error', resp => {
       console.log('Unable to join', resp);
     });
   }
 else {
-  channel.join()
+  channel.join('chat_room:lobby')
   .receive('ok', resp => {
     console.log('Joined lobby successfully', resp);
     })

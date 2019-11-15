@@ -1759,11 +1759,15 @@ channel.on('new_message', function (payload) {
   list.prop({ scrollTop: list.prop('scrollHeight') });
 });
 
-channel.join().receive('ok', function (resp) {
-  console.log('Joined successfully', resp);
-}).receive('error', function (resp) {
-  console.log('Unable to join', resp);
-});
+if (window.location.pathname === "/chattwo") {
+  channel_two.join('chat_room:room_two').receive('error', function (resp) {
+    console.log('Unable to join', resp);
+  });
+} else {
+  channel.join('chat_room:lobby').receive('ok', function (resp) {
+    console.log('Joined lobby successfully', resp);
+  });
+}
 
 exports.default = socket;
 

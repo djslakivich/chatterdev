@@ -8,6 +8,7 @@
                         'Elixir.Chatter.MessageTwo','Elixir.Chatter.Repo',
                         'Elixir.ChatterWeb','Elixir.ChatterWeb.ChannelCase',
                         'Elixir.ChatterWeb.ChatRoomChannel',
+                        'Elixir.ChatterWeb.ChatRoomChannelTwo',
                         'Elixir.ChatterWeb.ConnCase',
                         'Elixir.ChatterWeb.Endpoint',
                         'Elixir.ChatterWeb.ErrorHelpers',
