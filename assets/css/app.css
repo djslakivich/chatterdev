@@ -9,13 +9,16 @@
   }
 
  .nav-decoration {
-   display: block;
-   float: left;
+   float: center ;
    list-style: none;
    text-decoration: none;
-   border: 2px dashed white;
-   padding: 0px 15px;
-   border-radius: 10px;
-   line-height: 15px;
-   margin-right: 18px;
- }
+}
+
+.nav-decoration > li {
+  display: inline-block;
+  padding: 0px 15px;
+  border-radius: 10px;
+  line-height: 15px;
+  margin-right: 18px;
+
+}
